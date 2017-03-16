@@ -9,13 +9,22 @@
 
 		<script>
 			// read user's number (popup window)
-			
+			var guess = window.prompt("Podaj liczbe z zakresu 1-5: ");
 			// create a random number
-			
+			var win = Math.floor(Math.random() * 5);
+            console.log(win);
 			// compare the numbers
-			
+			var result = false;
+            
+            if(guess == win) {
+                result = true;
+            } 
 			// show results (popup window)
-			
+			if(result) {
+                window.alert("Good job!");
+            } else {
+                window.alert("Sorry");
+            }
 		</script>
 	</body>
 </html>

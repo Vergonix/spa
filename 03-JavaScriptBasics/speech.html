@@ -39,12 +39,21 @@
 				
 				// complete a JavaScript code here ...
 				// ...
-				
+                var sentences = ["", "", "", "", ""];
+                var speach = "";
+                
+                for(var i = 0; i < sentences.length; i++) {
+                    sentences[i] = first[n()] + " " + second[n()] + " " + third[n()] + " " + fourth[n()] + " ";
+                    speach += sentences[i];
+                }
+                
+                console.log(speach);
 			}
 
 			// returns random integer from 0 to 9
 			function n() {
-				// ...
+				var r = Math.floor(Math.random() * 9);
+                return r;
 			}
 			
 		</script>

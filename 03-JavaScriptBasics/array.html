@@ -11,21 +11,33 @@
 		<script>
 			var tab = [null, null, null, null, null];
 			var i;
+            var sorted = true;
 
 			// assing random integers to array elements
 			for (i = 0; i < tab.length; i++) {
-				// ...
+				tab[i] = Math.floor(Math.random() * 6);
 			}
 
 			// show array elements
 			console.log('Array elements:');
-			// ...
+            for(i = 0; i < tab.length; i++) {
+                console.log(tab[i] + ",");
+            }
 			
 			// check whether the array is ordered
-			// ...
+            for(i = 0; i < tab.length; i++) {
+                if (tab[i] < tab[i - 1]) {
+				    sorted = false;
+					break;
+				}
+            }
 			
 			// display message: Array is ordered / unordered
-			// ...
+            if(sorted) {
+                console.log("Tablica jest posortowana");
+            } else {
+                console.log("Tablica jest nie posortowana");
+            }
 		</script>
 	</body>
 </html>
