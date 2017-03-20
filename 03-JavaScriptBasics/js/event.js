@@ -1,8 +1,8 @@
-var button = document.getElementById("button");
-var clickc = 0;
+var clicks = 0;
 
-console.log(button);
+var button = document.getElementById("button");
+
 button.addEventListener("click", function() {
-	clicks++;
+    clicks++;
 	console.log("you clicked button " + clicks + " times");
 });
