@@ -7,6 +7,19 @@
 	<body>
 		<h1>Display books list</h1>
 		<script>
+            var books = [first = {id: 1, title: "The return of the duck and goose", author: "Sir Piggy", format: "paperback", prize: 19.99},
+                         second = {id: 2, title: "The adventures of duck and goose", author: "D. Cow", format: "hardback", prize: 18.99},
+                         third = {id: 3, title: "My friend is a duck", author: "A. Parrot", format: "paperback", prize: 14.99},
+                         fourth = {id: 4, title: "'duck and goose' cheat sheet for students", author: "Polly Parrot", format: "paperback", prize: 5.99},
+                         fifth = {id: 5, title: "'duck and goose': an allegory for modern times?", author: "Bor Ing", format: "ebook", prize: 59.99}];
+            
+            for(var b in books) {
+                if(books[b].format == "paperback") {
+                    console.log("Id: " + books[b ].id + "\ntitle: " + books[b].title + "\nauthor: " + books[b].author + 
+                                "\nformat: " + books[b].format + "\nprize: " + books[b].prize);
+                    console.log("=========================================================");
+                }
+            }
 		</script>
 	</body>
 </html>

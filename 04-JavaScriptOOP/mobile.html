@@ -6,7 +6,32 @@
 	</head>
 	<body>
 		<h1>Create mobile phone</h1>
+        <button onclick="displayData()">Nacisnij</button>
 		<script>
+            var mobileData;
+            var featuresData = "";
+            
+            var mobile = {
+                model: "Nokia",
+                screenSize: 5,
+                frontCamera: true,
+                features: ["dual-sim", "micro sd card", "speakers"],
+                specs: {procesor: "intel", cores: 2, Lte: true}
+            };
+            
+            function displayData() {
+                
+                for(var s in mobile.features) {
+                    s++;
+                    featuresData += "    " + s + ") " + mobile.features[s] + "\n";
+                }
+                
+                mobileData = "Model: " + mobile.model + "\n" + "screen size: " + mobile.screenSize +"\n" + 
+                            "Front camera: " + mobile.frontCamera + "\n" + "Features: " + "\n" + featuresData + 
+                            "Specs: procesor - " + mobile.specs.procesor + "\n" + "Specs: cores - " + mobile.specs.cores + "\n" +
+                            "Specs: LTE - " + mobile.specs.Lte;
+                window.alert("Dane techniczne telefonu: \n" + mobileData);
+            }
 		</script>
 	</body>
 </html>

@@ -11,14 +11,41 @@
 					arr: [3,4,76,1,5,787,33,76,1,99,45,235,53,23],
 					min: function(){
 						// maximum value (sort the arr and take the last value, use a built-in function)
+                        myArray.arr.sort(function(a, b){return a-b});;
+                        return myArray.arr[0];
 					},		
-					max: function(){},		// look at the min method comment
-					avg: function(){},		// avarage value
-					lth: function(val){}	// the number of arr values less than 'val'
+					max: function(){
+                        myArray.arr.sort(function(a, b){return a-b});;
+                        for(var n in myArray.arr) {
+                            console.log(myArray.arr[n]);
+                        }
+                        return myArray.arr[myArray.arr.length - 1];
+                        
+                    },		// look at the min method comment
+					avg: function(){
+                        var sum = 0;
+                        for(var n in myArray.arr) {
+                            sum += myArray.arr[n];
+                        }
+                        
+                        return Math.round((sum/myArray.arr.length) * 100) / 100;
+                    },		// avarage value
+					lth: function(val){
+                        var count = 0;
+                        for(var n in myArray.arr) {
+                            if(val > myArray.arr[n]){
+                                count++;
+                            }
+                        }
+                        return count;
+                    }	// the number of arr values less than 'val'
 			};
 			
 			// display results (min,max,avg,lth) in the console
-			// ...
+			console.log("Array min value " + myArray.min());
+            console.log("Array max value " + myArray.max());
+            console.log("Array avg value " + myArray.avg());
+            console.log("Number of array values lest then val is: " + myArray.lth(5));
 		</script>
 	</body>
 </html>
