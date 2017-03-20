@@ -6,11 +6,55 @@
 	</head>
 	<body>
 		<h1>Houses for sale</h1>
-		<script>
-            
-            function House() {
+		<script>                    
+            function House(numberOfBedrooms, facilities, prize, address, phone) {
+                this.numberOfBedrooms = numberOfBedrooms;
+                this.facilities = facilities;
+                this.prize = prize;
+                this.address = address;
+                this.phone = phone;
                 
+                this.changePrize = function(newPrize) {
+                    prize = newPrize;
+                }
+                
+                this.addFacility = function(newFacility) {
+                    facilities.push(newFacility);
+                }
+                
+                this.description = function() {
+                    
+                    var facilitiesList = "";
+                
+                    for(var f in facilities) {
+                        facilitiesList += "    " + facilities[f] + "\n";
+                    }
+                    
+                    return console.log("House details:\n" + "number of bedrooms: " + numberOfBedrooms +
+                                       "\nfacilities:\n" + facilitiesList + "prize: " + prize + 
+                                       "\naddress:\n " + "   city: " + address.city + "\n    street: " + address.street + 
+                                       "\nphone: " + phone + "\n============================");
+                }
             }
+            
+            var home1 = new House(1, ["TV", "Pool"], 350000, {city: "Krakow", street: "zielona"}, "111111111");
+            var home2 = new House(2, ["TV", "Garage", "Pool"], 700000, {city: "Krakow", street: "niebieska"}, "222222222");
+            var home3 = new House(3, ["Garden", "Pool"], 300000, {city: "Krakow", street: "czerwona"}, "333333333");
+            var home4 = new House(4, ["TV", "Garage"], 250000, {city: "Krakow", street: "fioletowa"}, "444444444");
+            var home5 = new House(5, ["TV", "Security cameras"], 600000, {city: "Krakow", street: "szara"}, "555555555");
+            
+            home1.changePrize(500000);
+            home3.changePrize(400000);
+            
+            home1.addFacility("security cameras");
+            home3.addFacility("Garage");
+            home4.addFacility("Pool");
+            
+            home1.description();
+            home2.description();
+            home3.description();
+            home4.description();
+            home5.description();
 		</script>
 	</body>
 </html>
