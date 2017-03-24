@@ -7,7 +7,24 @@
 	<body>
 		<script>
 			// a JavaScript code here ...
-			
+			var table = document.createElement("table");
+            table.setAttribute("border", "1");
+            
+            var trs = [];
+            
+            var textOne = ["Email", "recieve/get/open an email", "exchange email                        address", "open/send/contain an attachment", "open/check your                inbox"];
+            
+            for(var i = 0; i < 5; i++) {
+                trs[i] = document.createElement("tr");                
+                //one[i] = document.createTextNode(textOne[i]);
+                
+                trs[i].appendChild(table.appendChild(document.createElement("td")));
+                trs[i].appendChild(table.appendChild(document.createElement("td")));
+                
+                table.appendChild(trs[i]);
+            }
+            
+            document.body.appendChild(table);
 		</script>
 	</body>
 </html>
