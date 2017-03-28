@@ -21,9 +21,21 @@
 		Jak głaz bodzący morze, reduta Ordona.</p>
 		
 		<textarea rows="15" cols="50"></textarea><br>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		
 		<script>
-			// a JavaScript code here ...
+            var timer;
+            
+            $("textarea")[0].onfocus = function() {
+                timer = setTimeout(count, 30000);
+            }
+            
+            function count() {
+                var text = $("textarea")[0].value;
+                               
+                window.alert("W przeciągu 30 seukund wpisałeś " + text.split(" ").length + " słów, oraz " + text.length + " znaków");
+            }
 			
 		</script>
 		
