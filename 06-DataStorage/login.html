@@ -17,8 +17,8 @@
         localStorage.setItem("login", "annie");
         localStorage.setItem("password", "ax123");
 
-        var login = document.getElementById("login");
-        var password = document.getElementById("pass");
+        var login = document.getElementById("login").value;
+        var password = document.getElementById("pass").value;
 
         var inputLogin = localStorage.getItem("login"),
             inputPass = localStorage.getItem("password");
