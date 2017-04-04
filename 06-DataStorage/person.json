@@ -1,0 +1,119 @@
+[
+{
+  "name": "Paweł",
+  "surname": "Pietralik",
+  "age": 21,
+  "gender": "male",
+  "email": "pietralikpawel@gmail.com",
+  "phone": {
+    "landline": "987654321",
+    "mobile": "123456789"
+  },
+  "address": {
+    "strAndHomeNr": "Mogilska 121",
+    "postalCode": "31-571",
+    "city": "Kraków"
+  },
+  "interests": ["sport", "pc games", "food"],
+  "family": {
+    "spouse": {
+    "name": "Katarzyna",
+    "surname": "Kowalska"
+  },
+  "children": [
+      {
+        "name": "Ola",
+        "surname": "Kowalska",
+        "gender": "Female",
+        "age": "9",
+        "kidsIntrests": ["TV", "sport", "food"]
+      },
+      {
+        "name": "Jan",
+        "surname": "Pietralik",
+        "gender": "male",
+        "age": "14",
+        "kidsIntrests": ["gym", "sport", "pc games"]
+      }
+    ]
+  }
+},
+{
+  "name": "Jan",
+  "surname": "Steave",
+  "age": 958,
+  "gender": "male",
+  "email": "pietralikpawel@gmail.com",
+  "phone": {
+    "landline": "987654321",
+    "mobile": "123456789"
+  },
+  "address": {
+    "strAndHomeNr": "Nieciekawa 121",
+    "postalCode": "31-588",
+    "city": "Koniec Swiata"
+  },
+  "interests": ["sport", "pc games", "food"],
+  "family": {
+    "spouse": {
+    "name": "Janina",
+    "surname": "Steave"
+  },
+  "children": [
+      {
+        "name": "Andzela",
+        "surname": "Steave",
+        "gender": "Female",
+        "age": "9",
+        "kidsIntrests": ["TV", "sport", "food"]
+      },
+      {
+        "name": "Max",
+        "surname": "Steave",
+        "gender": "male",
+        "age": "14",
+        "kidsIntrests": ["gym", "sport", "pc games"]
+      }
+    ]
+  }
+},
+{
+  "name": "Joanna",
+  "surname": "Pe",
+  "age": 21,
+  "gender": "female",
+  "email": "asia@gmail.com",
+  "phone": {
+    "landline": "666666666",
+    "mobile": "666666666"
+  },
+  "address": {
+    "strAndHomeNr": "Piekielna 69",
+    "postalCode": "69-666",
+    "city": "Piekło"
+  },
+  "interests": ["cooking ppl", "pranking", "killing"],
+  "family": {
+    "spouse": {
+    "name": "Szatanisław",
+    "surname": "Devil"
+  },
+  "children": [
+      {
+        "name": "Brajan",
+        "surname": "Devil",
+        "gender": "male",
+        "age": "9",
+        "kidsIntrests": ["TV", "sport", "food"]
+      },
+      {
+        "name": "Dzesika",
+        "surname": "Devil",
+        "gender": "female",
+        "age": "14",
+        "kidsIntrests": ["gym", "sport", "pc games"]
+      }
+    ]
+  }
+}
+]
