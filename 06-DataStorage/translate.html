@@ -1,0 +1,29 @@
+<html>
+    <head>
+    </head>
+    
+    <body>
+        <p id="data">Translate object to web storage</p>
+        <script>
+            var person = {
+                name: "Pawel",
+                surname: "Pietralik",
+                age: 21,
+                gender: "male",
+                phone: {
+                    landline: "123456789",
+                    mobile: "987654321"
+                },
+                address: {
+                    street: "Mogilska 121",
+                    city: "Krakow"
+                },
+                intrests: ["sport", "games", "music"]
+            }
+            
+            var obj = JSON.stringify(person);
+            localStorage.setItem("personData", obj);
+            
+        </script>
+    </body>
+</html>

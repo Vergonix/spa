@@ -1,0 +1,36 @@
+<html>
+    
+    <head>
+    </head>
+    
+    <body>
+        <form>
+            name:<br>
+            <input type="text" id="name"><br>
+            surname:<br>
+            <input type="text" id="surname"><br><br>
+            <input type="submit" id="save" value="save">
+            <input type="submit" id="restore" value="restore">
+        </form>
+        
+        <script>
+            var save, restore, name, surname;
+            
+            save = document.getElementById("save");
+            restore = document.getElementById("restore");
+            name = document.getElementById("name");
+            surname = document.getElementById("surname");
+            
+            save.onclick = function() {
+                localStorage.setItem("name", document.getElementById("name").value);
+                localStorage.setItem("surname", document.getElementById("surname").value);
+            }
+            
+            restore.onclick = function() {
+                name.setAttribute("value", localStorage.getItem("name"));
+                surname.setAttribute("value", localStorage.getItem("surname"));
+            }
+        </script>
+    </body>
+    
+</html>

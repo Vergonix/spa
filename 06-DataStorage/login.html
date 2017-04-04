@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        Login:<br>
+        <input type="text" id="login"><br>
+        Password:<br>
+        <input type="password" id="pass"><br><br>
+        <input type="button" id="log" value="log in">
+    </form>
+
+    <script>
+        localStorage.setItem("login", "annie");
+        localStorage.setItem("password", "ax123");
+
+        var login = document.getElementById("login");
+        var password = document.getElementById("pass");
+
+        var inputLogin = localStorage.getItem("login"),
+            inputPass = localStorage.getItem("password");
+
+
+        document.getElementById("log").addEventListener("click", function() {
+            if(login === inputLogin && password === inputPass) {
+                window.alert("Logowanie zakończone sukcesem");
+            } else {
+                window.alert("Błędne dane , spróbuj ponownie");
+            }
+        });
+    </script>
+</body>
+</html>
